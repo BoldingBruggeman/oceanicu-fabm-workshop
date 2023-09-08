@@ -34,6 +34,7 @@ requirements:
     - make                       # [not win]
     - {{ compiler('c') }}        # essential for Visual Studio + ifort, to find MSBuild!
     - {{ compiler('fortran') }}  # [not win]
+    - python
     - pip
   run:
     - python
