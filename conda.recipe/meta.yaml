@@ -28,14 +28,14 @@ source:
 requirements:
   host:
     - netcdf-fortran             # [not win] not needed on Windows because it gets netcdf from GOTM
+    - python
+    - pip
   build:
     # - cython
     - cmake
     - make                       # [not win]
     - {{ compiler('c') }}        # essential for Visual Studio + ifort, to find MSBuild!
     - {{ compiler('fortran') }}  # [not win]
-    - python
-    - pip
   run:
     - python
     - numpy
