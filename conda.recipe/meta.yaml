@@ -1,0 +1,58 @@
+package:
+  name: oceanicu
+  version: 0.1
+
+source:
+  - git_url: https://github.com/gotm-model/code.git
+    folder: gotm
+    git_rev: v6.0
+  - git_url: https://github.com/fabm-model/fabm.git
+    git_depth: 1
+    folder: fabm
+  - git_url: https://github.com/BoldingBruggeman/fabm-mops.git
+    git_depth: 1
+    folder: mops
+  - git_url: https://github.com/inogs/bfmforfabm
+    git_rev: dev_monospectral
+    folder: ogs
+  - git_url: https://github.com/pmlmodelling/ersem
+    git_depth: 1
+    folder: ersem
+
+# build:
+#   entry_points:
+#     - pygetm-subdiv = pygetm.subdiv:main
+#     - pygetm-test-scaling = pygetm.parallel:test_scaling_command
+#     - pygetm-compare-nc = pygetm.util.compare_nc:compare_command
+
+requirements:
+  host:
+    - netcdf-fortran             # [not win] not needed on Windows because it gets netcdf from GOTM
+  build:
+    # - cython
+    - cmake
+    - make                       # [not win]
+    - {{ compiler('c') }}        # essential for Visual Studio + ifort, to find MSBuild!
+    - {{ compiler('fortran') }}  # [not win]
+    - pip
+  run:
+    - python
+    - numpy
+    - matplotlib
+    - netCDF4
+    - pyqt
+
+test:
+  commands:
+    - gotm -v
+    - multiplot --version
+
+about:
+  # home: https://pygetm.readthedocs.io
+  # summary: Python-based 3D hydrodynamic model for coastal oceans
+  # description: |
+  #   pygetm is a rewrite of the General Estuarine Transport Model (GETM)
+  #   in Python (mostly) and Fortran (performance-critical sections)
+  license: GPL
+  # doc_url: https://pygetm.readthedocs.io
+  dev_url: https://github.com/BoldingBruggeman/oceanicu-fabm-workshop
