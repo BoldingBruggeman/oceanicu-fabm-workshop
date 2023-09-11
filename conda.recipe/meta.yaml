@@ -1,6 +1,6 @@
 package:
   name: oceanicu
-  version: 0.1
+  version: 0.2
 
 source:
   - git_url: https://github.com/gotm-model/code.git
@@ -18,14 +18,14 @@ source:
   - git_url: https://github.com/pmlmodelling/ersem
     git_depth: 1
     folder: ersem
+  - git_url: https://github.com/BoldingBruggeman/fabm-pisces.git
+    git_depth: 1
+    folder: pisces
 
 build:
   entry_points:
     - pyncview = pyncview.pyncview:main
     - multiplot = pyncview.multiplot:main
-#     - pygetm-subdiv = pygetm.subdiv:main
-#     - pygetm-test-scaling = pygetm.parallel:test_scaling_command
-#     - pygetm-compare-nc = pygetm.util.compare_nc:compare_command
 
 requirements:
   host:
@@ -33,10 +33,9 @@ requirements:
     - python
     - pip
   build:
-    # - cython
     - cmake
     - make                       # [not win]
-    - {{ compiler('c') }}        # essential for Visual Studio + ifort, to find MSBuild!
+    - {{ compiler('c') }}        # [win] essential for Visual Studio + ifort, to find MSBuild!
     - {{ compiler('fortran') }}  # [not win]
   run:
     - python
@@ -51,11 +50,10 @@ test:
     - multiplot --version
 
 about:
-  # home: https://pygetm.readthedocs.io
-  # summary: Python-based 3D hydrodynamic model for coastal oceans
-  # description: |
-  #   pygetm is a rewrite of the General Estuarine Transport Model (GETM)
-  #   in Python (mostly) and Fortran (performance-critical sections)
+  summary: GOTM-FABM for OceanICU hands-on model workshop
+  description: |
+    The GOTM-FABM water column model, compiled with biogeochemical
+    models used within OceanICU (MOPS, ERSEM, BFM). PyNcView
+    is included for visualization of model results.
   license: GPL
-  # doc_url: https://pygetm.readthedocs.io
   dev_url: https://github.com/BoldingBruggeman/oceanicu-fabm-workshop

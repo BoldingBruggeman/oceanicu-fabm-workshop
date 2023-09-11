@@ -43,3 +43,11 @@ This does *not* require administrator or root permissions.
    ```
    pyncview result.nc
    ```
+
+# Uninstall
+
+To remove the installated software:
+
+```
+conda env remove -n oceanicu
+```
