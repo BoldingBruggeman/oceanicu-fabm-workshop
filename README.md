@@ -4,6 +4,8 @@ For this workshop, we will work in a terminal window while installing and runnin
 * On Windows, use the "Anaconda prompt" from the start menu (instructions on how to install that below).
 * On a Mac with an M1 processor, you will need to [open the terminal with Rosetta](https://www.byran.tech/html/how-to-make-a-rosetta-2-emulated-x86-terminal-on-arm-apple-silicon-chips.html).
 
+We will be editing text files with model configurations. This can be done with many different editors, e.g., [Visual Studio Code](https://code.visualstudio.com/), Notepad on Windows, `vi` on Linux/Mac. We recommend using one you are already familiar with.
+
 ## Install the water column model locally
 
 This does *not* require administrator or root permissions.
