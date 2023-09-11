@@ -46,7 +46,7 @@ This does *not* require administrator or root permissions.
    pyncview result.nc
    ```
 
-# Uninstall
+## Uninstall
 
 To remove the installated software:
 
