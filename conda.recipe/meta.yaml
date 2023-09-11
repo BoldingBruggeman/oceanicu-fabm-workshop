@@ -19,8 +19,10 @@ source:
     git_depth: 1
     folder: ersem
 
-# build:
-#   entry_points:
+build:
+  entry_points:
+    - pyncview = pyncview.pyncview:main
+    - multiplot = pyncview.multiplot:main
 #     - pygetm-subdiv = pygetm.subdiv:main
 #     - pygetm-test-scaling = pygetm.parallel:test_scaling_command
 #     - pygetm-compare-nc = pygetm.util.compare_nc:compare_command
