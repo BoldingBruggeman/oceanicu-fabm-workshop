@@ -16,12 +16,16 @@ This does *not* require administrator or root permissions.
 
    If you *do not* have Anaconda, install Miniconda on [Linux](https://conda.io/projects/conda/en/stable/user-guide/install/linux.html), [Windows](https://conda.io/projects/conda/en/stable/user-guide/install/windows.html), or [Mac](https://conda.io/projects/conda/en/stable/user-guide/install/macos.html). On Mac, always pick an Intel x86 installer, even if you have an M1 processor.
 
-   If you *do* have Anaconda, open a terminal window. Now execute `conda update conda` to ensure your conda is up to date. If this fails because of lack of permissions, we recommend you install Miniconda as described under the previous option.
-
 2. Create an isolated `oceanicu` environment with the model and visualization tools:
     ```
     conda create -n oceanicu -c bolding-bruggeman -c conda-forge oceanicu
     ```
+    If you experience any issue with the above, we recommend you execute `conda update conda` first to ensure your conda is up to date.
+    Should this fails because of lack of permissions, we recommend you install Miniconda as described under the previous option.
+
+
+If the above has succeeded, you are ready for the workshop.
+Instructions below are for reference during and after the workshop only.
 
 ## Running the model
 
