@@ -2,7 +2,6 @@
 
 For this workshop, we will work in a terminal window while installing and running models. This looks different on different platforms:
 * On Windows, use the "Anaconda prompt" from the start menu (instructions on how to install that below).
-* On a Mac with an M1 processor, you will need to [open the terminal with Rosetta](https://www.byran.tech/html/how-to-make-a-rosetta-2-emulated-x86-terminal-on-arm-apple-silicon-chips.html).
 
 We will be editing text files with model configurations. This can be done with many different editors, e.g., [Visual Studio Code](https://code.visualstudio.com/), Notepad on Windows, `vi` on Linux/Mac. We recommend using one you are already familiar with.
 
@@ -14,7 +13,7 @@ This does *not* require administrator or root permissions.
    - Linux/Mac: execute `conda --version` in a terminal
    - Windows: look for “Anaconda prompt” in the start menu
 
-   If you *do not* have Anaconda, install Miniconda on [Linux](https://conda.io/projects/conda/en/stable/user-guide/install/linux.html), [Windows](https://conda.io/projects/conda/en/stable/user-guide/install/windows.html), or [Mac](https://conda.io/projects/conda/en/stable/user-guide/install/macos.html). On Mac, always pick an Intel x86 installer, even if you have an M1 processor.
+   If you *do not* have Anaconda, install Miniconda on [Linux](https://conda.io/projects/conda/en/stable/user-guide/install/linux.html), [Windows](https://conda.io/projects/conda/en/stable/user-guide/install/windows.html), or [Mac](https://conda.io/projects/conda/en/stable/user-guide/install/macos.html).
 
 2. Create an isolated `oceanicu` environment with the model and visualization tools:
     ```
