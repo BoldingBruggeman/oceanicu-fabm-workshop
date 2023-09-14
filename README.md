@@ -19,8 +19,9 @@ This does *not* require administrator or root permissions.
     ```
     conda create -n oceanicu -c bolding-bruggeman -c conda-forge oceanicu
     ```
-    If you experience any issue with the above, we recommend you execute `conda update conda` first to ensure your conda is up to date.
-    Should this fails because of lack of permissions, we recommend you install Miniconda as described under the previous option.
+    If you experience any issue with the above, we recommend you first execute `conda update conda` to ensure your conda is up to date.
+    Should this fail because of lack of permissions, we recommend you install Miniconda as described under the previous option. After
+    you have an up-to-date conda, retry the `conda create ...` command.
 
 
 If the above has succeeded, you are ready for the workshop.
