@@ -1,6 +1,6 @@
 package:
   name: oceanicu
-  version: 0.2
+  version: 0.3
 
 source:
   - git_url: https://github.com/gotm-model/code.git
@@ -43,6 +43,7 @@ requirements:
     - matplotlib
     - netCDF4
     - pyqt
+    - fabmos
 
 test:
   commands:
@@ -50,10 +51,10 @@ test:
     - multiplot --version
 
 about:
-  summary: GOTM-FABM for OceanICU hands-on model workshop
+  summary: Biogeochemical model testbeds for OceanICU
   description: |
-    The GOTM-FABM water column model, compiled with biogeochemical
-    models used within OceanICU (MOPS, ERSEM, BFM). PyNcView
-    is included for visualization of model results.
+    The GOTM-FABM water column model, FABM offline simulator (FABM-OS),
+    compiled with biogeochemical models used within OceanICU (MOPS, ERSEM, BFM).
+    PyNcView is included for visualization of model results.
   license: GPL
   dev_url: https://github.com/BoldingBruggeman/oceanicu-fabm-workshop
